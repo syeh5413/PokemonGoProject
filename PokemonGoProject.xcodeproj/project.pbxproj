@@ -15,6 +15,7 @@
 		31D9828C28133DD200CA1136 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31D9828A28133DD200CA1136 /* Main.storyboard */; };
 		31D9828E28133DD400CA1136 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31D9828D28133DD400CA1136 /* Assets.xcassets */; };
 		31D9829128133DD400CA1136 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31D9828F28133DD400CA1136 /* LaunchScreen.storyboard */; };
+		31EA944F281882540050D8FE /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EA944E281882540050D8FE /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		31D9828D28133DD400CA1136 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31D9829028133DD400CA1136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31D9829228133DD400CA1136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31EA944E281882540050D8FE /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				31D9828828133DD200CA1136 /* ViewController.swift */,
 				31D6C39228187976001636F1 /* PokemonClass.swift */,
 				31D6C39428187A36001636F1 /* PokedexView.swift */,
+				31EA944E281882540050D8FE /* InfoViewController.swift */,
 				31D9828A28133DD200CA1136 /* Main.storyboard */,
 				31D9828D28133DD400CA1136 /* Assets.xcassets */,
 				31D9828F28133DD400CA1136 /* LaunchScreen.storyboard */,
@@ -148,6 +151,7 @@
 				31D6C39328187976001636F1 /* PokemonClass.swift in Sources */,
 				31D6C39528187A36001636F1 /* PokedexView.swift in Sources */,
 				31D9828528133DD200CA1136 /* AppDelegate.swift in Sources */,
+				31EA944F281882540050D8FE /* InfoViewController.swift in Sources */,
 				31D9828728133DD200CA1136 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
