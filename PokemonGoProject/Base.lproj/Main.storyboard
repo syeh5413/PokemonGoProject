@@ -36,7 +36,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="184"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pokémon_logo" translatesAutoresizingMaskIntoConstraints="NO" id="YIF-ay-18k">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pokémon_logo" translatesAutoresizingMaskIntoConstraints="NO" id="YIF-ay-18k">
                                         <rect key="frame" x="39" y="41" width="337" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -164,7 +164,7 @@
     </scenes>
     <resources>
         <image name="Mapicon" width="1024" height="1024"/>
-        <image name="Pokémon_logo" width="5000" height="1832"/>
+        <image name="Pokémon_logo" width="5000" height="1832"/>
         <image name="pokedex" width="1280" height="720"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
