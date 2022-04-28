@@ -29,7 +29,12 @@
                             <constraint firstItem="MBv-rp-WoN" firstAttribute="bottom" secondItem="xYL-Wz-3In" secondAttribute="bottom" id="hGJ-Xo-SEw"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="kw7-ct-GrF"/>
+                    <navigationItem key="navigationItem" id="kw7-ct-GrF">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Zoom" id="Htu-pD-Ryp"/>
+                            <barButtonItem title="Show Pokemon" id="fjP-1b-kDg"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="xYL-Wz-3In" id="zmw-Vo-Svh"/>
                     </connections>
