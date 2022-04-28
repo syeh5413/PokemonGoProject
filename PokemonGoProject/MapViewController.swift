@@ -19,7 +19,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         mapView.delegate = self
         locationManager.requestWhenInUseAuthorization()
         mapView.showsUserLocation = true
@@ -49,7 +49,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     }
     
     @IBAction func whenShowGymsButtonPressed(_ sender: Any) {
-       
+        
         let request = MKLocalSearch.Request()
         request.naturalLanguageQuery = "Park"
         let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
@@ -61,11 +61,11 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
             for currentMapItem in response.mapItems {
                 self.pokemon.append(currentMapItem)
                 let annotation = MKPointAnnotation()
-                annotation.title = currentMapItem.name
+                annotation.title = "PokemonName"
                 annotation.coordinate = currentMapItem.placemark.coordinate
                 self.mapView.addAnnotation(annotation)
             }
         }
     }
-    
 }
+
