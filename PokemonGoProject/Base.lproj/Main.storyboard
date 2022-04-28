@@ -36,7 +36,7 @@
                                     <action selector="whenZoomButtonPressed:" destination="BVZ-Nh-lnP" id="zB5-Va-QtQ"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="Show Gyms" id="sWn-sa-vVe">
+                            <barButtonItem title="Show Pokemon" id="sWn-sa-vVe">
                                 <connections>
                                     <action selector="whenShowGymsButtonPressed:" destination="BVZ-Nh-lnP" id="EsO-tU-Opm"/>
                                 </connections>

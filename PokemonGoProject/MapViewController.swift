@@ -14,7 +14,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     let locationManager = CLLocationManager()
     var currentLocation:CLLocation!
     var pokemon: [MKMapItem] = []
-    var gyms: [MKMapItem] = []
     var initialRegion: MKCoordinateRegion!
     var isInitialLoad = true
     
@@ -60,7 +59,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         search.start { myResponse, myError in
             guard let response = myResponse else { return }
             for currentMapItem in response.mapItems {
-                self.gyms.append(currentMapItem)
+                self.pokemon.append(currentMapItem)
                 let annotation = MKPointAnnotation()
                 annotation.title = currentMapItem.name
                 annotation.coordinate = currentMapItem.placemark.coordinate
