@@ -30,7 +30,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kw7-ct-GrF">
-                        <barButtonItem key="rightBarButtonItem" title="Zoom" id="Htu-pD-Ryp"/>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Zoom" id="Htu-pD-Ryp">
+                                <connections>
+                                    <action selector="whenZoomButtonPressed:" destination="BVZ-Nh-lnP" id="zB5-Va-QtQ"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Show Gyms" id="sWn-sa-vVe">
+                                <connections>
+                                    <action selector="whenShowGymsButtonPressed:" destination="BVZ-Nh-lnP" id="EsO-tU-Opm"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="xYL-Wz-3In" id="zmw-Vo-Svh"/>
