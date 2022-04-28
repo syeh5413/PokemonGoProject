@@ -1,13 +1,13 @@
 //
-//  InfoViewController.swift
+//  MapViewController.swift
 //  PokemonGoProject
 //
-//  Created by Sam Yeh on 4/26/22.
+//  Created by Alex Hotca on 4/28/22.
 //
 
 import UIKit
 
-class InfoViewController: UIViewController {
+class MapViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,5 +16,5 @@ class InfoViewController: UIViewController {
     }
     
 
-   
+
 }

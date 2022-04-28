@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31283D2E281B199300200A3F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31283D2D281B199300200A3F /* MapViewController.swift */; };
 		31D6C39328187976001636F1 /* PokemonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D6C39228187976001636F1 /* PokemonClass.swift */; };
 		31D6C39528187A36001636F1 /* PokedexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D6C39428187A36001636F1 /* PokedexView.swift */; };
 		31D9828528133DD200CA1136 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D9828428133DD200CA1136 /* AppDelegate.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		31283D2D281B199300200A3F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		31D6C39228187976001636F1 /* PokemonClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonClass.swift; sourceTree = "<group>"; };
 		31D6C39428187A36001636F1 /* PokedexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexView.swift; sourceTree = "<group>"; };
 		31D9828128133DD200CA1136 /* PokemonGoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonGoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +70,7 @@
 				31D6C39228187976001636F1 /* PokemonClass.swift */,
 				31D6C39428187A36001636F1 /* PokedexView.swift */,
 				31EA944E281882540050D8FE /* InfoViewController.swift */,
+				31283D2D281B199300200A3F /* MapViewController.swift */,
 				31D9828A28133DD200CA1136 /* Main.storyboard */,
 				31D9828D28133DD400CA1136 /* Assets.xcassets */,
 				31D9828F28133DD400CA1136 /* LaunchScreen.storyboard */,
@@ -153,6 +156,7 @@
 				31D9828528133DD200CA1136 /* AppDelegate.swift in Sources */,
 				31EA944F281882540050D8FE /* InfoViewController.swift in Sources */,
 				31D9828728133DD200CA1136 /* SceneDelegate.swift in Sources */,
+				31283D2E281B199300200A3F /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
