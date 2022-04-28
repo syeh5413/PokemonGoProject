@@ -22,7 +22,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xAt-Pk-gGa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="809" y="-671"/>
+            <point key="canvasLocation" x="1567" y="415"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -36,7 +36,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="184"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pokémon_logo" translatesAutoresizingMaskIntoConstraints="NO" id="YIF-ay-18k">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pokémon_logo" translatesAutoresizingMaskIntoConstraints="NO" id="YIF-ay-18k">
                                         <rect key="frame" x="39" y="41" width="337" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -126,7 +126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aYj-Gj-01S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1591" y="68"/>
+            <point key="canvasLocation" x="1567" y="-300"/>
         </scene>
         <!--Info View Controller-->
         <scene sceneID="Jcj-UI-s1v">
@@ -141,7 +141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="thu-2a-FyJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2380" y="68"/>
+            <point key="canvasLocation" x="2374" y="-300"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dcB-Fu-MgU">
@@ -164,7 +164,7 @@
     </scenes>
     <resources>
         <image name="Mapicon" width="1024" height="1024"/>
-        <image name="Pokémon_logo" width="5000" height="1832"/>
+        <image name="Pokémon_logo" width="5000" height="1832"/>
         <image name="pokedex" width="1280" height="720"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
