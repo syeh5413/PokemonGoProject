@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="BMU-Nm-ZG0">
             <objects>
-                <viewController id="BVZ-Nh-lnP" sceneMemberID="viewController">
+                <viewController id="BVZ-Nh-lnP" customClass="MapViewController" customModule="PokemonGoProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uyp-qe-Mc4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
