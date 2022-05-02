@@ -39,12 +39,21 @@
                         <rightBarButtonItems>
                             <barButtonItem title="showPokemon" image="shareplay" catalog="system" id="SaN-19-7NV">
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="whenPokemonShowButtonPressed:" destination="BVZ-Nh-lnP" id="BLR-1M-Fxc"/>
+                                </connections>
                             </barButtonItem>
                             <barButtonItem title="Zoom" image="plus.magnifyingglass" catalog="system" id="akB-JM-TUw">
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="whenZoomButtonPressed:" destination="BVZ-Nh-lnP" id="yxR-VP-2kV"/>
+                                </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="jjE-mh-RFe" id="Sko-4U-UHA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xAt-Pk-gGa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

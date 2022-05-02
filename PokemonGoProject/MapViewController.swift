@@ -48,7 +48,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         mapView.setRegion(myRegion, animated: true)
     }
     
-    @IBAction func whenShowGymsButtonPressed(_ sender: Any) {
+    @IBAction func whenPokemonShowButtonPressed(_ sender: Any) {
         
         let request = MKLocalSearch.Request()
         request.naturalLanguageQuery = "Park"
