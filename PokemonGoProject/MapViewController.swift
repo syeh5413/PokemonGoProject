@@ -74,7 +74,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
 
             let rightButton = UIButton(type: .infoLight)
             rightButton.tag = annotation.hash
-
+            
+            let pinImage = UIImage(named: "001")
+            pinView.image = pinImage
+            
             pinView.animatesDrop = true
             pinView.canShowCallout = true
             pinView.rightCalloutAccessoryView = rightButton
