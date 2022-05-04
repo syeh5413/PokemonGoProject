@@ -55,17 +55,34 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
         request.region = MKCoordinateRegion(center: currentLocation.coordinate, span: span)
         let search = MKLocalSearch(request: request)
-        
+
         search.start { myResponse, myError in
             guard let response = myResponse else { return }
             for currentMapItem in response.mapItems {
                 self.pokemon.append(currentMapItem)
                 let annotation = MKPointAnnotation()
-                annotation.title = "PokemonName"
                 annotation.coordinate = currentMapItem.placemark.coordinate
+                annotation.title = "name"
                 self.mapView.addAnnotation(annotation)
             }
         }
     }
-}
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        if !(annotation is MKUserLocation) {
+            let pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: String(annotation.hash))
 
+            let rightButton = UIButton(type: .infoLight)
+            rightButton.tag = annotation.hash
+
+            pinView.animatesDrop = true
+            pinView.canShowCallout = true
+            pinView.rightCalloutAccessoryView = rightButton
+
+            return pinView
+        }
+        else {
+            return nil
+        }
+    }
+}
