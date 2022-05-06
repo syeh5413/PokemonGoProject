@@ -62,7 +62,29 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
                 self.pokemon.append(currentMapItem)
                 let annotation = MKPointAnnotation()
                 annotation.coordinate = currentMapItem.placemark.coordinate
-                annotation.title = "name"
+                
+                let randomNumber = Int.random(in: 1...9)
+                
+                if randomNumber == 1 {
+                    annotation.title = "Bulbasaur"
+                }  else if randomNumber == 2 {
+                    annotation.title = "Ivysaur"
+                } else if randomNumber  == 3 {
+                    annotation.title = "Venusaur"
+                } else if randomNumber == 4 {
+                    annotation.title = "Charmander"
+                }  else if randomNumber == 5 {
+                    annotation.title = "Charmeleon"
+                } else if randomNumber == 6 {
+                    annotation.title = "Charizard"
+                } else if randomNumber == 7 {
+                    annotation.title = "Squirtle"
+                } else if randomNumber == 8 {
+                    annotation.title = "Wartorle"
+                } else if randomNumber == 9 {
+                    annotation.title = "Blastoise"
+                }
+                
                 self.mapView.addAnnotation(annotation)
             }
         }
