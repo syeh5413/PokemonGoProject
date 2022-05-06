@@ -55,7 +55,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
         request.region = MKCoordinateRegion(center: currentLocation.coordinate, span: span)
         let search = MKLocalSearch(request: request)
-
+        
         search.start { myResponse, myError in
             guard let response = myResponse else { return }
             for currentMapItem in response.mapItems {
@@ -71,17 +71,36 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if !(annotation is MKUserLocation) {
             let pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: String(annotation.hash))
-
+            
             let rightButton = UIButton(type: .infoLight)
             rightButton.tag = annotation.hash
             
-            let pinImage = UIImage(named: "001")
-            pinView.image = pinImage
+            let randomNumber =  Int.random(in: 1...9)
+            
+            if randomNumber == 1 {
+                pinView.image = UIImage(named: "001")
+            } else if randomNumber == 2 {
+                pinView.image = UIImage(named: "002")
+            } else if randomNumber == 3 {
+                pinView.image = UIImage(named: "003")
+            } else if randomNumber == 4 {
+                pinView.image = UIImage(named: "004")
+            } else if randomNumber == 5 {
+                pinView.image = UIImage(named: "005")
+            } else if randomNumber == 6 {
+                pinView.image = UIImage(named: "006")
+            } else if randomNumber == 7 {
+                pinView.image = UIImage(named: "007")
+            } else if randomNumber == 8 {
+                pinView.image = UIImage(named: "008")
+            } else if randomNumber == 9 {
+                pinView.image = UIImage(named: "009")
+            }
             
             pinView.animatesDrop = true
             pinView.canShowCallout = true
             pinView.rightCalloutAccessoryView = rightButton
-
+            
             return pinView
         }
         else {
