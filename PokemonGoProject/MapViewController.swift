@@ -66,11 +66,15 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
                 annotation.title = "Pokemon"
                 
                 self.mapView.addAnnotation(annotation)
+                
+                
             }
         }
     }
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        
+        
         if !(annotation is MKUserLocation) {
             let pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: String(annotation.hash))
             
@@ -108,5 +112,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         else {
             return nil
         }
+    }
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        print("hi")
     }
 }
