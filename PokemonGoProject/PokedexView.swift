@@ -66,7 +66,7 @@ class PokedexView: UIViewController {
             
             nvc.pokemon = Wartortle
             
-        } else if segue.identifier == "AŒ9" {
+        } else if segue.identifier == "A9" {
             
             let Blastoise = Pokemon(numberID: "009", name: "Blastoise", category: "Shellfish", height: "5' \"03", weight: "188.5 lbs", description: "It crushes its foe under its heavy body to cause fainting. In a pinch, it will withdraw inside its shell.", pictureName: "009", type: "Water", type2: "backG")
             
