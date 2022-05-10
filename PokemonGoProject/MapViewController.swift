@@ -63,27 +63,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
                 let annotation = MKPointAnnotation()
                 annotation.coordinate = currentMapItem.placemark.coordinate
                 
-                let randomNumber = Int.random(in: 1...9)
-                
-                if randomNumber == 1 {
-                    annotation.title = "Bulbasaur"
-                }  else if randomNumber == 2 {
-                    annotation.title = "Ivysaur"
-                } else if randomNumber  == 3 {
-                    annotation.title = "Venusaur"
-                } else if randomNumber == 4 {
-                    annotation.title = "Charmander"
-                }  else if randomNumber == 5 {
-                    annotation.title = "Charmeleon"
-                } else if randomNumber == 6 {
-                    annotation.title = "Charizard"
-                } else if randomNumber == 7 {
-                    annotation.title = "Squirtle"
-                } else if randomNumber == 8 {
-                    annotation.title = "Wartorle"
-                } else if randomNumber == 9 {
-                    annotation.title = "Blastoise"
-                }
+                annotation.title = "Pokemon"
                 
                 self.mapView.addAnnotation(annotation)
             }
@@ -93,9 +73,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if !(annotation is MKUserLocation) {
             let pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: String(annotation.hash))
-            
-            let rightButton = UIButton(type: .infoLight)
-            rightButton.tag = annotation.hash
             
             let randomNumber =  Int.random(in: 1...9)
             
@@ -118,6 +95,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
             } else if randomNumber == 9 {
                 pinView.image = UIImage(named: "009")
             }
+            
+            let rightButton = UIButton(type: .infoLight)
+            rightButton.tag = annotation.hash
             
             pinView.animatesDrop = true
             pinView.canShowCallout = true
