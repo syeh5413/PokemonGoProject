@@ -52,6 +52,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="jjE-mh-RFe" id="Sko-4U-UHA"/>
+                        <segue destination="6W0-Fs-5rS" kind="show" identifier="showDexSegue" id="74a-yv-cpQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xAt-Pk-gGa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -532,7 +533,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="NJz-Fh-V9c"/>
+        <segue reference="D5Z-Ps-qfA"/>
+        <segue reference="74a-yv-cpQ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="1" width="475" height="475"/>
