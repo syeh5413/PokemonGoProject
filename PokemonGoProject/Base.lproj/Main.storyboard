@@ -36,7 +36,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="PokéMap" id="kw7-ct-GrF">
                         <rightBarButtonItems>
-                            <barButtonItem title="showPokemonZoom" image="shareplay.slash" catalog="system" id="g7m-Yl-PNh">
+                            <barButtonItem title="showPokemonZoom" image="minus.magnifyingglass" catalog="system" id="g7m-Yl-PNh">
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="whenShowPokemonPressed:" destination="BVZ-Nh-lnP" id="4Ye-2H-CKg"/>
@@ -568,7 +568,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="D5Z-Ps-qfA"/>
-        <segue reference="CYK-v7-v4D"/>
+        <segue reference="74a-yv-cpQ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="1" width="475" height="475"/>
@@ -582,10 +582,10 @@
         <image name="9" width="475" height="475"/>
         <image name="Mapicon" width="1024" height="1024"/>
         <image name="chevron.backward.square.fill" catalog="system" width="128" height="114"/>
+        <image name="minus.magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="plus.magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="pokedex" width="1280" height="720"/>
         <image name="shareplay" catalog="system" width="128" height="73"/>
-        <image name="shareplay.slash" catalog="system" width="128" height="83"/>
         <image name="square.grid.3x3.fill" catalog="system" width="128" height="112"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
