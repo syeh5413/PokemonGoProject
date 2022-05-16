@@ -43,7 +43,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     
     @IBAction func whenZoomButtonPressed(_ sender: Any) {
         let myCenter = currentLocation.coordinate
-        let mySpan = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+        let mySpan = MKCoordinateSpan(latitudeDelta: 0.000001, longitudeDelta: 0.000001)
         let myRegion = MKCoordinateRegion(center: myCenter, span: mySpan)
         mapView.setRegion(myRegion, animated: true)
     }
@@ -70,6 +70,13 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
                 
             }
         }
+    }
+    
+    @IBAction func whenShowPokemonPressed(_ sender: Any) {
+        let myCenter2 = currentLocation.coordinate
+        let mySpan2 = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+        let myRegion2 = MKCoordinateRegion(center: myCenter2, span: mySpan2)
+        mapView.setRegion(myRegion2, animated: true)
     }
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
