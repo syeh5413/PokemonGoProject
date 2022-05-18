@@ -399,10 +399,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Pokédex" id="uqB-ts-Z3w">
                         <barButtonItem key="backBarButtonItem" title="Back" id="1a6-cX-qps"/>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="square.grid.3x3.fill" catalog="system" id="9tW-0v-OpL">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <barButtonItem key="rightBarButtonItem" title="Full Pokedex" id="dqh-cH-h5C">
                             <connections>
-                                <segue destination="v5U-Lq-0lz" kind="show" identifier="gridView" id="Vgd-K8-DT0"/>
+                                <action selector="whenShowFullPokedexPressed:" destination="6W0-Fs-5rS" id="K6z-E6-zx7"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -568,7 +567,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="D5Z-Ps-qfA"/>
-        <segue reference="74a-yv-cpQ"/>
+        <segue reference="CYK-v7-v4D"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="1" width="475" height="475"/>
@@ -586,7 +585,6 @@
         <image name="plus.magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="pokedex" width="1280" height="720"/>
         <image name="shareplay" catalog="system" width="128" height="73"/>
-        <image name="square.grid.3x3.fill" catalog="system" width="128" height="112"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

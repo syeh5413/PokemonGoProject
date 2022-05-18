@@ -6,10 +6,11 @@
 //
 
 import UIKit
+import SafariServices
 
 class PokedexView: UIViewController {
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -41,7 +42,7 @@ class PokedexView: UIViewController {
             let Charmander = Pokemon(numberID: "004", name: "Charmander", category: "Lizard", height: "2' \"00", weight: "18.7 lbs", description: "It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.", pictureName: "4", type: "Fire", type2: "backG")
             
             nvc.pokemon = Charmander
-        
+            
         } else if segue.identifier == "A5" {
             
             let Charmeleon = Pokemon(numberID: "005", name: "Charmeleon", category: "Flame", height: "3' \"07", weight: "41.9 lbs", description: "It has a barbaric nature. In battle, it whips its fiery tail around and slashes away with sharp claws.", pictureName: "5", type: "Fire", type2: "backG")
@@ -72,7 +73,11 @@ class PokedexView: UIViewController {
             
             nvc.pokemon = Blastoise
         }
-    
     }
-
+    
+    let url = URL(string: "https://pokemon.fandom.com/wiki/List_of_Pok%C3%A9mon")
+    
+    @IBAction func whenShowFullPokedexPressed(_ sender: Any) {
+        UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+    }
 }
