@@ -80,9 +80,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         
-        let pokemonName = UIButton.self()
-        pokemonName.tag = annotation.hash
-        
         if !(annotation is MKUserLocation) {
             let pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: String(annotation.hash))
             
@@ -90,40 +87,30 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
             
             if randomNumber == 1 {
                 pinView.image = UIImage(named: "001")
-//                pokemonName.currentTitle = "Bulbasaur"
             } else if randomNumber == 2 {
                 pinView.image = UIImage(named: "002")
-//                pokemonName.title = "Ivysaur"
             } else if randomNumber == 3 {
                 pinView.image = UIImage(named: "003")
-//                pokemonName.title = "Venusaur"
             } else if randomNumber == 4 {
                 pinView.image = UIImage(named: "004")
-//                pokemonName.title = "Charmander"
             } else if randomNumber == 5 {
                 pinView.image = UIImage(named: "005")
-//                pokemonName.title = "Charmeleon"
             } else if randomNumber == 6 {
                 pinView.image = UIImage(named: "006")
-//                pokemonName.title = "Charizard"
             } else if randomNumber == 7 {
                 pinView.image = UIImage(named: "007")
-//                pokemonName.title = "Squirtle"
             } else if randomNumber == 8 {
                 pinView.image = UIImage(named: "008")
-//                pokemonName.title = "Wartortle"
             } else if randomNumber == 9 {
                 pinView.image = UIImage(named: "009")
-//                pokemonName.title = "Blastoise"
             }
             
-            let leftButton = UIButton(type: .infoLight)
-            leftButton.tag = annotation.hash
+            let rightButton = UIButton(type: .infoLight)
+            rightButton.tag = annotation.hash
             
             pinView.animatesDrop = true
             pinView.canShowCallout = true
-            pinView.leftCalloutAccessoryView = leftButton
-            pinView.rightCalloutAccessoryView = pokemonName
+            pinView.rightCalloutAccessoryView = rightButton
             
             return pinView
         }
