@@ -16,7 +16,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     var pokemon: [MKMapItem] = []
     var initialRegion: MKCoordinateRegion!
     var isInitialLoad = true
-    var gyms: [MKMapItem] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
